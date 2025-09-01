@@ -18,6 +18,14 @@ const printer = require("../controllers/printer.controller");
 const setting = require("../controllers/settings.controller");
 const client = require("../controllers/clientController");
 const payment = require("../controllers/paymentController");
+const hall = require("../controllers/hall.controller");
+
+// ===== HALL ROUTES =====
+router.post("/halls/create", authMiddleware, onlyAdmin, hall.createHall);
+router.get("/halls/list", hall.getAllHalls);
+router.get("/halls/:id", hall.getHallById);
+router.put("/halls/update/:id", authMiddleware, onlyAdmin, hall.updateHall);
+router.delete("/halls/delete/:id", authMiddleware, onlyAdmin, hall.deleteHall);
 
 // ===== AUTH =====
 router.post("/auth/login", auth.login);

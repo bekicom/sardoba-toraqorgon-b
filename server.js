@@ -18,7 +18,6 @@ const server = http.createServer(app);
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:3000",
-  "https://sora-f.vercel.app",
   "http://192.168.0.101:5173",
 ];
 

@@ -1,0 +1,26 @@
+# node modules
+node_modules/
+
+
+# log files
+logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# coverage & build
+coverage/
+dist/
+build/
+
+# VSCode config
+.vscode/
+
+# MongoDB data (if any local dump)
+dump/
+
+# macOS metadata
+*.DS_Store

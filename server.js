@@ -48,7 +48,7 @@ connectDB();
 app.use("/api", mainRoutes);
 
 // 🚀 Serverni ishga tushirish
-const PORT = process.env.PORT || 5009;
+const PORT = process.env.PORT || 5034;
 server.listen(PORT, "0.0.0.0", () => {
   console.log(`🚀 Server ishga tushdi: http://0.0.0.0:${PORT}`);
 });
